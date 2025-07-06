@@ -1,8 +1,10 @@
-# iCAMP (Demo Version)
+# iCAMP (WIP)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/djg6565/icamp/blob/main/src/OpenPose-OpenCV.ipynb)
+
 
 iCAMP (Integration of Computation, Analysis, Mathematics, and Playing) is a software that is a fusion of computational physics and AI. Using the OpenPose, OpenCV, and YOLOv8 models, it analyzes videos of the user's basketball shots and automatically provides feedback on how to improve.
 
-This demo version is a work-in-progress "barebones" version that does not include certain features that are planned in the full release (which is scheduled for August 2025). However, it gives users a sense of what this project can do.
+This is a work in progress.
 
 ## Installation
 
@@ -20,19 +22,29 @@ conda activate tf_py39_env
 ```
 pip install -r requirements.txt
 ```
+Note that if you are using Windows, you must also install Xming.
+
+Next, Jupyter needs to recognize tf_py39_env as a kernel. This can be done with
+```
+conda install ipykernel
+```
+```
+python -m ipykernel install --user --name test --display-name "Python 3.9 (Tensorflow)"
+```
+or whatever display name you would like.
+
 Once installation is complete, activate Jupyter notebook:
 ```
 jupyter notebook
 ```
-iCAMP is now ready to run!
 ## Usage
 To open the program again, activate tf_py39_env, change directory to iCAMP, and run it in Jupyter.
 
 Upload a high-resolution clip to the folder named "UPLOAD VIDEO HERE." This clip must be a .mp4 file and be named "video.mp4". Ideally, it should be 30 fps, well-lit, and have been shot to the side of the person and slightly in front with the entire person in view. Please be sure only one person is in the shot. For development purposes, a sample "video.mp4" is already included.
 
-Navigate to the "src" folder and run "OpenPose-OpenCV.ipynb". This will run iCAMP.
+Navigate to the "src" folder and open "OpenPose-OpenCV.ipynb". Change the kernel (in the top right corner) to "Python 3.9 (Tensorflow)," or whatever you named the kernel earlier. Then, run all of the cells.
 
-
+On first use, expect a delay before the program initiates as Jupyter loads the environment.
 
 ## License
 
@@ -57,14 +69,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-**Third-Party Code (Apache 2.0):**  
-This project includes modified code from:  
-- **Project:** Human Pose Estimation with OpenCV  
-  **Repository:** [github.com/quanhua92/human-pose-estimation-opencv](https://github.com/quanhua92/human-pose-estimation-opencv)  
-  **Original Author:** Quan Hua  
-  **Modifications:**  
-  - none
-
-
-See NOTICE for a copy of the Apache 2.0 license.
