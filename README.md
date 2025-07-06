@@ -1,8 +1,8 @@
-# iCAMP (WIP)
+# iCAMP (Demo Version)
 
 iCAMP (Integration of Computation, Analysis, Mathematics, and Playing) is a software that is a fusion of computational physics and AI. Using the OpenPose, OpenCV, and YOLOv8 models, it analyzes videos of the user's basketball shots and automatically provides feedback on how to improve.
 
-This is a work in progress.
+This demo version is a work-in-progress "barebones" version that does not include certain features that are planned in the full release (which is scheduled for August 2025). However, it gives users a sense of what this project can do.
 
 ## Installation
 
