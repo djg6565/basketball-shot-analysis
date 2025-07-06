@@ -1,35 +1,35 @@
-# iCAMP (WIP)
+# iCAMP (Demo Version)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/djg6565/icamp/blob/main/src/OpenPose-OpenCV.ipynb)
 
 
 iCAMP (Integration of Computation, Analysis, Mathematics, and Playing) is a software that is a fusion of computational physics and AI. Using the OpenPose, OpenCV, and YOLOv8 models, it analyzes videos of the user's basketball shots and automatically provides feedback on how to improve.
 
-This is a work in progress.
+This is a demo version that is intended to showcase the core abilities of iCAMP. However, more is to come in the full release, which is scheduled for August 2025.
 
 ## Installation
 
-If not already installed, please install Conda (either Miniconda or Anaconda) here: https://www.anaconda.com/download/. Follow the instructions on that website/on the installer.
+Download this repository as a .zip file. If not already installed, please install Conda (either Miniconda or Anaconda) here: https://www.anaconda.com/download/. Follow the instructions on that website/on the installer.
 
-Create a Python 3.9 environment with Tensorflow by running the following: 
+Create a Python 3.9 environment by running the following: 
 ```
-conda create -n tf_py39_env python=3.9
+conda create -n py39_env python=3.9
 ```
 Then, activate the new environment,...
 ```
-conda activate tf_py39_env
+conda activate py39_env
 ```
-...change directory to where "iCAMP" folder is located, and install dependencies:
+...change directory to where the repository folder is located locally, and install dependencies:
 ```
 pip install -r requirements.txt
 ```
 Note that if you are using Windows, you must also install Xming.
 
-Next, Jupyter needs to recognize tf_py39_env as a kernel. This can be done with
+Next, Jupyter needs to recognize py39_env as a kernel. This can be done with
 ```
 conda install ipykernel
 ```
 ```
-python -m ipykernel install --user --name test --display-name "Python 3.9 (Tensorflow)"
+python -m ipykernel install --user --name test --display-name "Python 3.9 Environment"
 ```
 or whatever display name you would like.
 
@@ -38,11 +38,11 @@ Once installation is complete, activate Jupyter notebook:
 jupyter notebook
 ```
 ## Usage
-To open the program again, activate tf_py39_env, change directory to iCAMP, and run it in Jupyter.
+To open the program again, activate py39_env, change directory to iCAMP, and run it in Jupyter.
 
-Upload a high-resolution clip to the folder named "UPLOAD VIDEO HERE." This clip must be a .mp4 file and be named "video.mp4". Ideally, it should be 30 fps, well-lit, and have been shot to the side of the person and slightly in front with the entire person in view. Please be sure only one person is in the shot. For development purposes, a sample "video.mp4" is already included.
+FOR NOW, ONLY FREE THROW SHOTS WITH THE CAMERA AT THE SIDE OF THE PERSON WORK. A sample video has already been provided in the folder named "UPLOAD VIDEO HERE." For demonstration purposes, only use this video, as the program seems to struggle with some other ones.
 
-Navigate to the "src" folder and open "OpenPose-OpenCV.ipynb". Change the kernel (in the top right corner) to "Python 3.9 (Tensorflow)," or whatever you named the kernel earlier. Then, run all of the cells.
+Navigate to the "src" folder and open "OpenPose-OpenCV.ipynb". Change the kernel (in the top right corner) to "Python 3.9 Environment," or whatever you named the kernel earlier. Then, run all of the cells.
 
 On first use, expect a delay before the program initiates as Jupyter loads the environment.
 
