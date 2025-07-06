@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.env
+.idea/ # IDE specific folders
+.vscode/ # VS Code specific folders
+
+# Jupyter Notebooks (useful to ignore temporary files)
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Conda environments (essential - DO NOT commit your Conda env itself)
+# The actual environment lives outside your project folder, but
+# this ensures no accidental inclusion of related files if they
+# somehow appear or if you create a local .venv/ env inside.
+# We will NOT be including the actual tf_py39_env folder here.
+
+# Machine Learning specific outputs
+*.pb # TensorFlow frozen graphs
+*.ckpt # TensorFlow checkpoints
+*.h5 # Keras models
+saved_model/ # Standard TF2 SavedModel format
+results/ # Folder for application outputs
+
+# Data files (often too large for Git)
+data/ # Ignore content of data folder if it contains large files
+*.csv
+*.txt
+*.zip
+*.json
+*.pkl
+
+# OS generated files
+.DS_Store # macOS specific
+.Trashes
+ehthumbs.db
+Thumbs.db
