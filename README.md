@@ -6,6 +6,8 @@ iCAMP (Integration of Computation, Analysis, Mathematics, and Playing) is a soft
 
 This is a demo version that is intended to showcase the core abilities of iCAMP. However, more is to come in the full release, which is scheduled for August 2025.
 
+This project was developed on a Python 3.9 environment, for which the instructions to replicate it are below. Using another version of Python or a different environment may or may not cause problems when running the code.
+
 ## Installation
 
 Download this repository as a .zip file. If not already installed, please install Conda (either Miniconda or Anaconda) here: https://www.anaconda.com/download/. Follow the instructions on that website/on the installer.
@@ -37,14 +39,13 @@ Once installation is complete, activate Jupyter notebook:
 ```
 jupyter notebook
 ```
+and change the kernel to "Python 3.9 Environment."
 ## Usage
-To open the program again, activate py39_env, change directory to iCAMP, and run it in Jupyter.
-
-FOR NOW, ONLY FREE THROW SHOTS WITH THE CAMERA AT THE SIDE OF THE PERSON WORK. A sample video has already been provided in the folder named "UPLOAD VIDEO HERE." For demonstration purposes, only use this video, as the program seems to struggle with some other ones.
-
-Navigate to the "src" folder and open "OpenPose-OpenCV.ipynb". Change the kernel (in the top right corner) to "Python 3.9 Environment," or whatever you named the kernel earlier. Then, run all of the cells.
-
-On first use, expect a delay before the program initiates as Jupyter loads the environment.
+To open the program again, activate py39_env, change directory to src (which is within the iCAMP folder). Then, use Voila to run main.ipynb:
+```
+voila main.ipynb
+```
+This activates the GUI. Follow the instructions within the GUI to upload and analyze video.
 
 ## License
 
