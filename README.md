@@ -2,7 +2,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/djg6565/icamp/blob/main/src/OpenPose-OpenCV.ipynb)
 
 
-iCAMP (Integration of Computation, Analysis, Mathematics, and Playing) is a software that is a fusion of computational physics and AI. Using the OpenPose, OpenCV, and YOLOv8 models, it analyzes videos of the user's basketball shots and automatically provides feedback on how to improve.
+iCAMP (Integration of Computation, Analysis, Mathematics, and Playing) is a software that is a fusion of computational physics and AI. Using the OpenPose, OpenCV, and YOLOv8 models, it analyzes videos of the user's basketball shots and automatically provides feedback on how to improve. It was developed by Derek Guo under the mentorship of Professor Jifu Tan of the State University of New York at Binghamton.
 
 This is a demo version that is intended to showcase the core abilities of iCAMP. However, more is to come in the full release, which is scheduled for August 2025.
 
